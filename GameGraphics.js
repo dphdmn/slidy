@@ -29,7 +29,7 @@ class GameGraphics extends Graphic_tools {
     fill(tileColors[tileColor]); 
 
   
-    strokeWeight(0.7);
+    strokeWeight(0);
     rect(exactX,exactY,this.tileSize,this.tileSize, cornersConst);
     strokeWeight(0.1);
     fill(cc("tileText",230)); 
