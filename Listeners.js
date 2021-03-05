@@ -1,6 +1,6 @@
 let wheelConst;
 let clickInterval;
-let cornersConst = 25;
+let cornersConst = 0;
 
 
 function mouseReleased(){
