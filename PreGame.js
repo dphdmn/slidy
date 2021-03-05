@@ -45,7 +45,7 @@ function preload(){
 //function before game
 function setup(){
   //cursor('big_pink.cur');
-  cursor('circle4.cur');
+  //cursor('circle4.cur');
   setBasicGuiColors();
   tileColors=[color(255,103,103),
      color(255,163,87),
