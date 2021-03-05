@@ -1,7 +1,7 @@
 let wheelConst;
 let clickInterval;
 let cornersConst = 0;
-
+let colorisblack=true;
 
 function mouseReleased(){
 
@@ -125,6 +125,14 @@ function keyPressed(){
   }
   if (key === '-'){
     myStats.switchSize(false);
+  }
+  if( key === 'C' || key === 'c' || key === 'с' || key === 'С'){
+  	if (colorisblack){
+		myGuiColors.setGui("gameBg","WHITE");
+	}else{
+		myGuiColors.setGui("gameBg","BLACK");
+	}
+	  colorisblack=!colorisblack;
   }
   if (key === '3' ||
       key === '4' ||
