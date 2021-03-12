@@ -1,8 +1,4 @@
 class GameGraphics extends Graphic_tools {
-
-  
-  
-  
   sizeChange(){
     super.sizeChange();
     this.tileSize = this.boardSize/myStats.N;
