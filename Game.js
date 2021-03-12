@@ -153,16 +153,18 @@ function gameThings(){
 function shuffleNumbers(array, N) {
  let maxN = N*N;
  let lastI = maxN - 3;
- 
+ let swapsAmount = 0;
  for (let i = 0; i<=lastI;i++){
    
-   randomInt = int(random(i+1, maxN-1));
-   //print([N,randomInt]);
-   tmp = array[i];
-   array[i]=array[randomInt];
-   array[randomInt] = tmp;
+   randomInt = int(random(i, maxN-1));
+   if (i != randomInt){
+     swapsAmount++;
+     tmp = array[i];
+     array[i]=array[randomInt];
+     array[randomInt] = tmp;
+   }
  }
-  if (lastI % 2 == 0){
+  if (swapsAmount % 2 != 0){
     tmp = array[0]
     array[0] = array[1];
     array[1] = tmp;
