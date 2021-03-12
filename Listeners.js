@@ -95,17 +95,17 @@ function mousePressedCNV(){
 
 //KeyListener
 function keyPressed(){ 
-  if (myStats.keyboard){
-    if (keyCode === UP_ARROW){
+ if (myStats.keyboard){
+    if (keyCode === UP_ARROW || key === 'i'){
       move(3);
     }
-    if(keyCode === DOWN_ARROW){
+    if(keyCode === DOWN_ARROW || key === 'k'){
        move(4);
     }
-    if(keyCode === LEFT_ARROW){
+    if(keyCode === LEFT_ARROW || key === 'j'){
       move(1);
     }
-    if(keyCode === RIGHT_ARROW){
+    if(keyCode === RIGHT_ARROW || key === 'f'){
       move(2)
     }
   }
