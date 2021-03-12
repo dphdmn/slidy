@@ -64,8 +64,8 @@ function nullGame(){
   }
   randomNumbers = shuffleNumbers([...randomNumbers], N);
   blankid =N*N;
-  let rmoves = int(random(0, N-1));
-  let dmoves = int(random(0, N-1));
+  let rmoves = int(random(0, N));
+  let dmoves = int(random(0, N));
   for (let i = 1; i<=rmoves;i++){
     move(2);//print("move2"); 
   }
