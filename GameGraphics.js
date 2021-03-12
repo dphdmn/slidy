@@ -85,6 +85,9 @@ class GameGraphics extends Graphic_tools {
     
     textSize(20);
     text("[SpaceBar] to Reset | [M] to change mode | [V] to hide things | [+][-] size change",this.W/2, this.W-this.W/9);
+    textSize(15);
+    fill(cc("tileColor", this.alpha));
+    text("Current mode: "+myStats.modeName + " (M to change)", this.W/2, this.W-this.W/35)
     textSize(25);
     
     let N = myStats.N;
@@ -119,6 +122,7 @@ class GameGraphics extends Graphic_tools {
       }
     }  
   }
+  
   
   gameOverText(){
     super.gameOverText();
