@@ -7,6 +7,10 @@ html, body {
   padding: 0;
   background: #303738;
   color: white;
+  display:flex; 
+  flex-direction:column;
+  width:100%; 
+  height:auto;
 }
 canvas {
   display: block;
