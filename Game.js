@@ -85,8 +85,9 @@ function nullGame(){
   let ch = ' ';
 
   let regex = new RegExp("((?:[^" +ch+ "]*" +ch+ "){" + (n-1) + "}[^" +ch+ "]*)" +ch, "g");
-
+  let lastnumber = (n*n).toString()
   str = str.replace(regex, '$1/');
+  str = str.replace(lastnumber, "0");
   scrambles.push(str);
   currentsol = "";
   //print(scrambles);
